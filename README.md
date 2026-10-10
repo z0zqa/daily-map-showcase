@@ -9,7 +9,7 @@ This repository is a showcase: it holds the description, recordings and screensh
 is private** and available on request (see [Source code](#source-code) below). The app runs locally: a small news
 server fetches and reads the sources, and the page shows them on the globe.
 
-![A 42-second demo: the News globe and two stories; the Analyst lens with totals per ticket type; three deals (a Kenyan loan, an Indian takeover, a Salvadoran airport tender) with how the first was read and its country risk; a country search with World Bank data; Trends; the midday briefing](docs/demo.gif)
+![A 42-second demo: the News globe and two stories; the Analyst lens with totals per ticket type; three deals (an EU loan to Spain read from a Spanish headline, an Indian takeover, a Brazilian port concession programme) with how the first was read and its country risk; a search for Poland with World Bank data and country risk; Trends; the midday briefing](docs/demo.gif)
 
 <sub>42 seconds, recorded from the running app with live news ([MP4](docs/demo.mp4)). The full 2½-minute tour, with the
 48-hour replay, the Archive and the dark version: [docs/tour.gif](docs/tour.gif).</sub>
@@ -36,7 +36,7 @@ actually follow: deals, infrastructure, macro and country risk, with every numbe
   English-language business news is thin. The glossaries were audited against published bilingual finance
   dictionaries (Ministry of Finance, World Bank, IMF, CGAP, CFPB).
 - **Transparent, checkable rules.** No AI model reads the news. Every story on the deal desk has a **How this was read**
-  trail: the words a fact came from, the outlet, the exchange rate and its date. 388 regression checks run in CI on
+  trail: the words a fact came from, the outlet, the exchange rate and its date. 394 regression checks run in CI on
   every push, and a labelling page scores the rules against hand labels with 95% intervals.
 - **A dataset, not just a feed.** Every deal the app sees is saved daily. **Trends** reads it as data (tickets by type
   with totals, medians and the largest; value by day; sectors, regions, stages, the most active DFIs and countries)
@@ -111,7 +111,7 @@ sources and references to use, and whether each reading was right.
 
 Because I did not write the code myself, nothing is taken on trust:
 
-- 388 regression checks (places, tickets, stages, deal merging, FX, four languages), each a headline the rules once
+- 394 regression checks (places, tickets, stages, deal merging, FX, four languages), each a headline the rules once
   misread or a known trap. CI runs them on every push.
 - A live audit reads every source once and reports how the rules read the day's headlines; a glossary audit checks
   every word stem against the most frequent words of its language, so a deal word does not catch an ordinary one.
@@ -160,7 +160,7 @@ This is a personal news-reading tool built on public sources, not investment adv
 
 ## Source code
 
-The code, the 388 regression checks, the CI workflow and the full methodology (how each fact is read, the dates kept
+The code, the 394 regression checks, the CI workflow and the full methodology (how each fact is read, the dates kept
 per story, how deals are counted once, where the macro and risk data come from) are in a private repository. Access for
 recruiters and reviewers is available on request: message me on [LinkedIn](https://www.linkedin.com/in/zuzannaczernicka/).
 
