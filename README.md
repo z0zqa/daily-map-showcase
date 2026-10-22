@@ -164,8 +164,7 @@ This is a personal news-reading tool built on public sources, not investment adv
 ## Source code
 
 The code, the 427 regression checks, the CI workflow and the full methodology (how each fact is read, the dates kept
-per story, how deals are counted once, where the macro and risk data come from) are in a private repository. Access for
-recruiters and reviewers is available on request: message me on [LinkedIn](https://www.linkedin.com/in/zuzannaczernicka/).
+per story, how deals are counted once, where the macro and risk data come from) are in a private repository. 
 
 ## License
 
