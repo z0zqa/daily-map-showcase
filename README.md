@@ -170,3 +170,4 @@ per story, how deals are counted once, where the macro and risk data come from) 
 
 © 2026 Zuzanna Czernicka. All rights reserved: see [LICENSE](LICENSE). The code is AI-written under my direction, as
 described in [How it was built](#how-it-was-built).
+ 
