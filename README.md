@@ -38,7 +38,7 @@ actually follow: deals, infrastructure, macro and country risk, with every numbe
   local translation model, and a translation is shown only if it keeps the original's figures, negations, acronyms and
   names: the checks caught "2025" turned into "2020" and "Nein zu russischem Öl" into "in favour of Russian oil".
 - **Transparent, checkable rules.** No AI model reads the news. Every story on the deal desk has a **How this was read**
-  trail: the words a fact came from, the outlet, the exchange rate and its date. 405 regression checks run in CI on
+  trail: the words a fact came from, the outlet, the exchange rate and its date. 420 regression checks run in CI on
   every push, and a labelling page scores the rules against hand labels with 95% intervals.
 - **A dataset, not just a feed.** Every deal the app sees is saved daily. **Trends** reads it as data (tickets by type
   with totals, medians and the largest; value by day; sectors, regions, stages, the most active DFIs and countries)
@@ -113,7 +113,7 @@ sources and references to use, and whether each reading was right.
 
 Because I did not write the code myself, nothing is taken on trust:
 
-- 405 regression checks (places, tickets, stages, deal merging, FX, four languages), each a headline the rules once
+- 420 regression checks (places, tickets, stages, deal merging, FX, four languages), each a headline the rules once
   misread or a known trap. CI runs them on every push.
 - A live audit reads every source once and reports how the rules read the day's headlines; a glossary audit checks
   every word stem against the most frequent words of its language, so a deal word does not catch an ordinary one.
@@ -162,7 +162,7 @@ This is a personal news-reading tool built on public sources, not investment adv
 
 ## Source code
 
-The code, the 405 regression checks, the CI workflow and the full methodology (how each fact is read, the dates kept
+The code, the 420 regression checks, the CI workflow and the full methodology (how each fact is read, the dates kept
 per story, how deals are counted once, where the macro and risk data come from) are in a private repository. Access for
 recruiters and reviewers is available on request: message me on [LinkedIn](https://www.linkedin.com/in/zuzannaczernicka/).
 
